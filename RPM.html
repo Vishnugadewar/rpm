@@ -251,10 +251,12 @@
         
         .professor-card {
             border-top: 5px solid var(--secondary);
+            grid-column: 2/3;
         }
         
         .student-card {
             border-top: 5px solid var(--primary);
+            grid-row: 2;
         }
         
         /* Research Links */
@@ -266,6 +268,13 @@
         
         .research-link:hover {
             color: var(--primary-dark);
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            color:#000;
         }
         
         /* Responsive Styles */
@@ -411,6 +420,11 @@
                         <p>Evaluation of competing energy management applications to identify best practices.</p>
                         <p><a href="https://miro.com/app/board/uXjVIIIDCik=/?share_link_id=84151265734" class="research-link" target="_blank">View competitive analysis</a></p>
                     </div>
+                    <div class="card">
+                        <h4>Concept validation</h4>
+                        <p>Testing the idea with real users and stakeholders to ensure it meets their needs and expectations before moving into development..</p>
+                        <p><a href="https://www.figma.com/design/RpouDJ3WWCCifD9gA8mCUX/EcoSync?node-id=468-1693&t=PO4EZ1OPBIGCf9mh-1" class="research-link" target="_blank">View concept validation</a></p>
+                    </div>
                 </div>
             </div>
             
@@ -443,7 +457,14 @@
             <div class="highlight">
                 <h3>Participant Demographics</h3>
                 <p>We recruited and interviewed six participants representing diverse living situations and electricity usage patterns:</p>
-                <ul>
+                
+                <!-- Single screenshot showing all participant profiles -->
+                <div class="participant-screenshot">
+                    <img src="images/persona.png" alt="Visual overview of all participant profiles" class="profile-screenshot">
+                    <p class="caption">Visual representation of our six participants with key demographic information</p>
+                </div>
+                
+                <ul class="participant-key">
                     <li><strong>Mhindi</strong> - 25, Homeowner, Single, High technical expertise</li>
                     <li><strong>Robert</strong> - 47, Apartment Renter, Shared household (4), Medium technical expertise</li>
                     <li><strong>Mouaed</strong> - 30, Homeowner, Family (4), Medium technical expertise</li>
@@ -451,9 +472,9 @@
                     <li><strong>Oliver</strong> - 27, Apartment Renter, Shared (3), High technical expertise</li>
                     <li><strong>Colton</strong> - 32, Apartment Renter, Shared (2), Low technical expertise</li>
                 </ul>
+                
                 <a href="https://www.figma.com/design/0PlZogpDrsIcumVSTJYOB2/User-Persona--Templates?node-id=0-1&t=qa2Xw5eUsLjFjv3Y-1" class="btn" target="_blank">View Detailed Personas</a>
             </div>
-        </div>
     </section>
 
     <!-- Findings Section -->
@@ -682,27 +703,27 @@
             <h2 class="text-center">Our Team</h2>
             <div class="grid">
                 <div class="team-member card professor-card">
-                    <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Dr. Joshua C. Nwokeji" class="team-img">
+                    <img src="images/DRJoshwa.jpeg" alt="Dr. Joshua C. Nwokeji" class="team-img">
                     <h3>Dr. Joshua C. Nwokeji</h3>
                     <p class="role">Course Instructor</p>
                     <p>GCIS 514 Professor</p>
                 </div>
                 <div class="team-member card student-card">
-                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Meiyeer Yeerbo" class="team-img">
+                    <img src="images/meyirr.jpeg" alt="Meiyeer Yeerbo" class="team-img">
                     <h3>Meiyeer Yeerbo</h3>
-                    <p class="role">Team Member</p>
+                    <p class="role">Team member</p>
                     <p>3205854</p>
                 </div>
                 <div class="team-member card student-card">
-                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Vishnu Vardhan Gade" class="team-img">
-                    <h3>Vishnu Vardhan Gade</h3>
-                    <p class="role">Team Member</p>
+                    <img src="images/v.JPG"Vishnu Gade" class="team-img">
+                    <h3>Vishnu Gade</h3>
+                    <p class="role">Team member</p>
                     <p>3215110</p>
                 </div>
                 <div class="team-member card student-card">
-                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Meshari Alshehri" class="team-img">
+                    <img src="images/meshari.jpeg"Meshari Alshehri" class="team-img">
                     <h3>Meshari Alshehri</h3>
-                    <p class="role">Team Member</p>
+                    <p class="role">Team member</p>
                     <p>3177525</p>
                 </div>
             </div>
@@ -748,22 +769,22 @@
                     <div class="link-grid">
                         <a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Project%20Management/INTERVIEW%20DOCS/Vishnu-20250323_080644-Meeting%20Recording.mp4?csf=1&web=1&e=kA3aTA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                            <img src="/images/icon/video.png"alt="Video icon"/>
                             Robert's Interview
                         </a>
                         <a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Project%20Management/INTERVIEW%20DOCS/Meshari_Mouayed_Interview.mov?csf=1&web=1&e=hrQq8C&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                           <img src="/images/icon/video.png"alt="Video icon"/>
                             Meshari's Interview with Mouaed
                         </a>
                         <a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Project%20Management/INTERVIEW%20DOCS/Meshari_Kumar_Interview.mp4?csf=1&web=1&e=gH81F9&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                           <img src="/images/icon/video.png"alt="Video icon"/>
                             Meshari's Interview with Kumar
                         </a>
                         <a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Recordings/Meeting%20with%20Gade,%20Vishnu%20Vardhan-20250406_223920-Meeting%20Recording.mp4?csf=1&web=1&e=58iP9J&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                           <img src="/images/icon/video.png"alt="Video icon"/>
                             Vishnu's Interview with Innocent
                         </a>
                         <a href="https://knightsgannon-my.sharepoint.com/:w:/r/personal/gade007_gannon_edu/Documents/Project%20Management/audeep%20interview%20transcript.docx?d=we08140d277724e28b8e001099da3daca&csf=1&web=1&e=72dvLu" 
@@ -772,11 +793,11 @@
                             Anudeep Interview Transcript
                         </a>
                         <a href="#" target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                           <img src="/images/icon/video.png"alt="Video icon"/>
                             Meyirr's Interview with Oliver
                         </a>
                         <a href="#" target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                           <img src="/images/icon/video.png"alt="Video icon"/>
                             Meyirr's Interview with Colton
                         </a>
                     </div>
@@ -788,17 +809,17 @@
                     <div class="link-grid">
                         <a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Project%20Management/tata%20UX%20video%20interview.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Qhup7p" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                           <img src="/images/icon/video.png"alt="Video icon"/>
                             Tata Interview for Design Validation
                         </a>
                         <a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Project%20Management/UI%26UX%20group%20video%20interview.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UQfmXQ" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                           <img src="/images/icon/video.png"alt="Video icon"/>
                             Group Interview for Design Validation
                         </a>
                         <a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Project%20Management/person2%20UI%20interview.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=SUlqov" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                           <img src="/images/icon/video.png"alt="Video icon"/>
                             James Interview for Design Validation
                         </a>
                     </div>
@@ -810,12 +831,12 @@
                     <div class="link-grid">
                         <a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Project%20Management/alsherhri%20teams%20interview.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZSOgKm" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                           <img src="/images/icon/video.png"alt="Video icon"/>
                             Alshehri's Usability Testing
                         </a>
                         <a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Project%20Management/Khalifa,%20Nasser,%20interview%20about%20AI.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=AiCPqB" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="Video icon">
+                           <img src="/images/icon/video.png"alt="Video icon"/>
                             Nasser's Usability Testing
                         </a>
                         <a href="https://knightsgannon-my.sharepoint.com/:w:/r/personal/gade007_gannon_edu/Documents/Project%20Management/lyzzat%20usability%20testing%202.docx?d=wb908219972194d02ad21b4917e39eee9&csf=1&web=1&e=R5Rtah" 
@@ -839,17 +860,17 @@
                     <div class="link-grid">
                         <a href="https://miro.com/app/board/uXjVLpM2JX0=/?share_link_id=576191396522" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968523.png" alt="Miro icon">
+                            <img src="/images/icon/miro.png" alt="Miro icon">
                             Roadmap for Application Development
                         </a>
                         <a href="https://miro.com/app/board/uXjVIIIDCik=/?share_link_id=84151265734" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968523.png" alt="Miro icon">
+                            <img src="/images/icon/miro.png" alt="Miro icon">
                             From User Interviews to Research Insights
                         </a>
                         <a href="https://miro.com/app/board/uXjVLjJ2i0A=/?share_link_id=658799623005" 
                            target="_blank" class="appendix-link">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968523.png" alt="Miro icon">
+                            <img src="/images/icon/miro.png" alt="Miro icon">
                             Stakeholders in EcoSync
                         </a>
                     </div>
