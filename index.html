@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Energy Management System</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -134,6 +136,132 @@
             </div>
         </div>
     </section>
+    <section><body>
+        <div class="matrix-container">
+            <!-- <h1 class="title">Feature Comparison Matrix</h1> -->
+            
+            <table id="comparison_table" class="comparison-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">Feature</th>
+                        <th>Google<br>Nest</th>
+                        <th>Amazon<br>Smart<br>Plugs</th>
+                        <th>Ecobee</th>
+                        <th>Emporia<br>Energy</th>
+                        <th>Sense</th>
+                        <th>Eve<br>Systems</th>
+                        <th>Aliste<br>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="feature-row">
+                        <td>Energy Monitoring</td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td>Device-Level Monitoring</td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td>Learning Capabilities</td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td>Remote Sensors</td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td>Data Reporting</td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td>Smart Home Integration</td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td>Privacy Focus</td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td>Voice Control</td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td>AI Usage Cost Prediction</td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                        <td><i class="fas fa-check check-mark"></i></td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td>Weather-Adaptive Energy Optimization</td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                        <td><i class="fas fa-times cross-mark"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- <p class="footer-note">
+            Compare key features across major smart energy monitoring systems to make an informed decision.
+        </p> -->
+        
+    </body></section>
 
     <!-- Research Section -->
     <section id="research">
@@ -166,13 +294,6 @@
                     </div>
     
                     <div class="card">
-                        <h4>Comparative Analysis</h4>
-                        <img src="images/COMPARITIVE ANALYSIS.jpeg" alt="Comparative Analysis Screenshot" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
-                        <p>Evaluation of competing energy management applications to identify best practices.</p>
-                        <p><a href="https://miro.com/app/board/uXjVIIIDCik=/?share_link_id=84151265734" class="research-link" target="_blank">View competitive analysis</a></p>
-                    </div>
-    
-                    <div class="card">
                         <h4>Concept Validation</h4>
                         <img src="images/CONCEPT VALIDATION.png" alt="Concept Validation Screenshot" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
                         <p>Testing the idea with real users and stakeholders to ensure it meets their needs and expectations before moving into development.</p>
@@ -183,7 +304,230 @@
             </div>
         </div>
     </section>
-    
+    <section class="ethics-section">
+        <h2 class="ethics-title">
+            <i class="fas fa-handshake"></i> Ethical Considerations
+        </h2>
+        
+        <div class="ethics-grid">
+            <div class="ethics-card">
+                <h3><i class="fas fa-file-signature"></i> Consent & Confidentiality</h3>
+                <ul>
+                    <li>Non-Disclosure Agreement (NDA) to protect sensitive information</li>
+                    <li>Informed Consent obtained from all participants</li>
+                    <li>Right to withdraw at any point without penalty</li>
+                    <li>Secure document storage with access controls</li>
+                </ul>
+            </div>
+            
+            <div class="ethics-card">
+                <h3><i class="fas fa-users"></i> Participant Selection</h3>
+                <ul>
+                    <li>Clear entry criteria (must be responsible for electricity bills)</li>
+                    <li>Diverse representation across housing types</li>
+                    <li>Inclusive age range (18-50+)</li>
+                    <li>No exclusion based on technical proficiency</li>
+                </ul>
+            </div>
+            
+            <!-- <div class="ethics-card">
+                <h3><i class="fas fa-clock"></i> Session Structure</h3>
+                <ul>
+                    <li>Reasonable 30-minute interview duration</li>
+                    <li>Clear introduction explaining research purpose</li>
+                    <li>Opportunity for questions before/after sessions</li>
+                    <li>Compensation for participants' time</li>
+                </ul>
+            </div> -->
+            
+            <div class="ethics-card">
+                <h3><i class="fas fa-lock"></i> Data Privacy</h3>
+                <ul>
+                    <li>Secure communication via Microsoft Teams</li>
+                    <li>Anonymization of personally identifiable information</li>
+                    <li>Encrypted storage of research data</li>
+                    <li>Data retention policy with scheduled deletion</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="documents-card">
+            <h3><i class="fas fa-folder-open"></i> Research Materials</h3>
+            <div class="doc-grid">
+                <a href="https://knightsgannon-my.sharepoint.com/:w:/r/personal/gade007_gannon_edu/Documents/Project%20Management/INTERVIEW%20DOCS/STAKEHOLDER%20RECRUMENT%20MAIL.docx?d=w5d39faa798a44887b67ea7438bccbd4e&csf=1&web=1&e=1tS8yg" 
+                   target="_blank" class="doc-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/281/281760.png" alt="Word icon">
+                    Interview Script
+                </a>
+                <a href="https://knightsgannon-my.sharepoint.com/:w:/r/personal/gade007_gannon_edu/Documents/Project%20Management/INTERVIEW%20DOCS/Non-Disclosure%20Agreement%20(NDA).docx?d=wa4f6e1d912f94de298fa4ae8618dc708&csf=1&web=1&e=meRlvZ" 
+                   target="_blank" class="doc-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/281/281760.png" alt="Word icon">
+                    Non-Disclosure Agreement
+                </a>
+                <a href="https://knightsgannon-my.sharepoint.com/:w:/r/personal/gade007_gannon_edu/Documents/Project%20Management/INTERVIEW%20DOCS/Informed%20Consent%20for%20EcoSync.docx?d=wef5490323a83447e98f0743854fe4696&csf=1&web=1&e=kM5ibc" 
+                   target="_blank" class="doc-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/281/281760.png" alt="Word icon">
+                    Informed Consent Form
+                </a>
+                <a href="https://knightsgannon-my.sharepoint.com/:w:/r/personal/gade007_gannon_edu/Documents/Project%20Management/INTERVIEW%20DOCS/STAKEHOLDER%20RECRUMENT%20MAIL.docx?d=w5d39faa798a44887b67ea7438bccbd4e&csf=1&web=1&e=1tS8yg" 
+                   target="_blank" class="doc-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/281/281760.png" alt="Word icon">
+                    Recruitment Email Template
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline">
+        
+            <div class="project-header">
+                <h1 class="project-title">EcoSync Project Timeline</h1>
+                <p class="project-tagline">Smart Energy Management System Development</p>
+            </div>
+        
+            <ul>
+                <li style="--accent-color:#3498db">
+                    <div class="date">Phase 1</div>
+                    <div class="title">
+                        <span class="phase-icon"><i class="fas fa-search"></i></span>
+                        Initial Research
+                    </div>
+                    <div class="descr">
+                        Conducted market analysis and competitive research of 7 leading energy management systems.
+                        <div class="phase-outcomes">
+                            <h4><i class="fas fa-check-circle"></i> Key Outcomes</h4>
+                            <ul class="outcome-list">
+                                <li>Identified lack of personalized AI recommendations</li>
+                                <li>Found limited solutions for multi-user households</li>
+                                <li>Noted complex interfaces as common pain point</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li style="--accent-color:#2ecc71">
+                    <div class="date">Phase 2</div>
+                    <div class="title">
+                        <span class="phase-icon"><i class="fas fa-users"></i></span>
+                        User Research
+                    </div>
+                    <div class="descr">
+                        Conducted interviews and surveys with diverse participants to understand energy management challenges.
+                        <div class="phase-outcomes">
+                            <h4><i class="fas fa-check-circle"></i> Key Outcomes</h4>
+                            <ul class="outcome-list">
+                                <li>Identified visibility challenges in current systems</li>
+                                <li>Discovered control limitations in shared households</li>
+                                <li>Documented awareness gaps in energy consumption</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li style="--accent-color:#e74c3c">
+                    <div class="date">Phase 3</div>
+                    <div class="title">
+                        <span class="phase-icon"><i class="fas fa-lightbulb"></i></span>
+                        Requirements Definition
+                    </div>
+                    <div class="descr">
+                        Synthesized research findings into functional, non-functional, and UX requirements.
+                        <div class="phase-outcomes">
+                            <h4><i class="fas fa-check-circle"></i> Key Outcomes</h4>
+                            <ul class="outcome-list">
+                                <li>Prioritized real-time device-level monitoring</li>
+                                <li>Defined AI-powered recommendation system</li>
+                                <li>Established multi-user access requirements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li style="--accent-color:#f39c12">
+                    <div class="date">Phase 4</div>
+                    <div class="title">
+                        <span class="phase-icon"><i class="fas fa-pencil-ruler"></i></span>
+                        Initial Design
+                    </div>
+                    <div class="descr">
+                        Created low-fidelity wireframes and concept sketches focusing on core functionality.
+                        <div class="phase-outcomes">
+                            <h4><i class="fas fa-check-circle"></i> Key Outcomes</h4>
+                            <ul class="outcome-list">
+                                <li>Developed foundational dashboard concept</li>
+                                <li>Designed basic scheduling functionality</li>
+                                <li>Established navigation framework</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li style="--accent-color:#9b59b6">
+                    <div class="date">Phase 5</div>
+                    <div class="title">
+                        <span class="phase-icon"><i class="fas fa-mobile-alt"></i></span>
+                        Prototype V1 Testing
+                    </div>
+                    <div class="descr">
+                        Conducted usability testing with initial prototype to evaluate core concepts.
+                        <div class="phase-outcomes">
+                            <h4><i class="fas fa-check-circle"></i> Key Outcomes</h4>
+                            <ul class="outcome-list">
+                                <li>Identified navigation challenges</li>
+                                <li>Received feedback on dashboard clarity</li>
+                                <li>Discovered need for better mode differentiation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li style="--accent-color:#1abc9c">
+                    <div class="date">Phase 6</div>
+                    <div class="title">
+                        <span class="phase-icon"><i class="fas fa-sync-alt"></i></span>
+                        Iterative Refinement
+                    </div>
+                    <div class="descr">
+                        Implemented user feedback through multiple design iterations (V2-V4).
+                        <div class="phase-outcomes">
+                            <h4><i class="fas fa-check-circle"></i> Key Outcomes</h4>
+                            <ul class="outcome-list">
+                                <li>Consolidated scheduling functionality</li>
+                                <li>Improved room/device differentiation</li>
+                                <li>Enhanced AI feedback mechanisms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li style="--accent-color:#d35400">
+                    <div class="date">Phase 7</div>
+                    <div class="title">
+                        <span class="phase-icon"><i class="fas fa-check-double"></i></span>
+                        Final Validation
+                    </div>
+                    <div class="descr">
+                        Conducted comprehensive testing of near-final prototype with focus on AI interactions.
+                        <div class="phase-outcomes">
+                            <h4><i class="fas fa-check-circle"></i> Key Outcomes</h4>
+                            <ul class="outcome-list">
+                                <li>Validated core functionality</li>
+                                <li>Identified remaining UI improvements</li>
+                                <li>Confirmed value proposition with users</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li style="--accent-color:#34495e">
+                    <div class="date">Phase 8</div>
+                    <div class="title">
+                        <span class="phase-icon"><i class="fas fa-chart-line"></i></span>
+                        Implementation Roadmap
+                    </div>
+                    <div class="descr">
+                        Developed prioritized implementation plan for MVP and future enhancements.
+                        <div class="phase-outcomes">
+                            <h4><i class="fas fa-check-circle"></i> Key Outcomes</h4>
+                            <ul class="outcome-list">
+                                <li>Defined high-priority MVP features</li>
+                                <li>Established medium-term enhancement plan</li>
+                                <li>Identified future innovation opportunities</li>
+                            </ul>
+                        </section>
             <!-- <div class="container">
 
             </div> -->
@@ -532,7 +876,68 @@
         </div>
     </section>
 
-
+    <section class="reflection-section">
+        <h2><i class="fas fa-brain"></i> 10. Reflection</h2>
+    
+        <div class="subsection">
+          <h3><i class="fas fa-exclamation-triangle"></i> Challenges Faced</h3>
+          <ul class="styled-list">
+            <li><i class="fas fa-users"></i> <strong>Diverse User Needs:</strong> Balancing active and passive energy management approaches required flexible design solutions.</li>
+            <li><i class="fas fa-cogs"></i> <strong>Technical Complexity:</strong> Designing for unknown integrations demanded adaptable interfaces.</li>
+            <li><i class="fas fa-robot"></i> <strong>AI Feature Expectations:</strong> Managing user expectations about automation vs. control.</li>
+            <li><i class="fas fa-laptop-house"></i> <strong>User Testing Limitations:</strong> Remote testing obscured non-verbal cues.</li>
+            <li><i class="fas fa-home"></i> <strong>Multi-user Household Dynamics:</strong> Technology can’t fully resolve interpersonal resource conflicts.</li>
+          </ul>
+        </div>
+    
+        <div class="subsection">
+          <h3><i class="fas fa-check-circle"></i> How Challenges Were Overcome</h3>
+          <ul class="styled-list">
+            <li><i class="fas fa-sliders-h"></i> <strong>Flexible UI:</strong> Customizable views for different user types.</li>
+            <li><i class="fas fa-puzzle-piece"></i> <strong>Adaptable Interfaces:</strong> Designed extension points for future integrations.</li>
+            <li><i class="fas fa-comment-alt"></i> <strong>Clear AI Communication:</strong> Concrete examples + manual overrides.</li>
+            <li><i class="fas fa-video"></i> <strong>Enhanced Remote Testing:</strong> Added questionnaires and focused sessions.</li>
+            <li><i class="fas fa-user-friends"></i> <strong>Household Features:</strong> Permission models + personalized insights.</li>
+          </ul>
+        </div>
+    
+        <div class="subsection">
+          <h3><i class="fas fa-graduation-cap"></i> Lessons Learned</h3>
+          <div class="grid-container">
+            <div class="lesson-card">
+              <i class="fas fa-sync-alt"></i>
+              <p><strong>Iterative Testing:</strong> Early wireframes revealed unexpected issues.</p>
+            </div>
+            <div class="lesson-card">
+              <i class="fas fa-user-edit"></i>
+              <p><strong>Persona Evolution:</strong> Real user quotes made personas actionable.</p>
+            </div>
+        
+            <div class="lesson-card">
+              <i class="fas fa-chart-bar"></i>
+              <p><strong>Visualization Matters:</strong> Abstract data needs clear visuals.</p>
+            </div>
+            <div class="lesson-card">
+              <i class="fas fa-balance-scale"></i>
+              <p><strong>Automation vs. Control:</strong> Users prefer recommendations over full automation.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="subsection">
+        
+          <div class="insight-box">
+            <i class="fas fa-lightbulb"></i>
+            <p>Initial assumptions were often <strong>contradicted by research</strong>. For example:</p>
+            <ul>
+              <li>Users valued <strong>transparency</strong> over automation.</li>
+              <li><strong>Simple visualizations</strong> were preferred by all users, not just novices.</li>
+              <li>Notifications emerged as a <strong>primary need</strong>, not secondary.</li>
+            </ul>
+            <p>The emotional drivers (anxiety, frustration, desire for control) ultimately guided our design priorities.</p>
+          </div>
+        </div>
+      </section>
 
     <!-- Appendix Section -->
     <section id="appendix" style="background-color: var(--light);">
@@ -696,6 +1101,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer>
