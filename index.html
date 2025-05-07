@@ -3,306 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoSync - Smart Energy Management System</title>
-    <style>
-        /* Global Styles */
-        :root {
-            --primary: #4CAF50;
-            --primary-dark: #388E3C;
-            --secondary: #2196F3;
-            --dark: #333;
-            --light: #f9f9f9;
-            --gray: #e0e0e0;
-            --text: #424242;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: var(--light);
-            color: var(--text);
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        section {
-            padding: 60px 0;
-        }
-        
-        h1, h2, h3, h4 {
-            margin-bottom: 20px;
-            color: var(--dark);
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            color: var(--primary-dark);
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-        }
-        
-        p {
-            margin-bottom: 15px;
-        }
-        
-        a {
-            color: var(--secondary);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        a:hover {
-            color: var(--primary-dark);
-        }
-        
-        .btn {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .btn:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-        }
-        
-        .btn-secondary {
-            background: var(--secondary);
-        }
-        
-        .btn-secondary:hover {
-            background: #1976D2;
-        }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        .flex {
-            display: flex;
-        }
-        
-        .flex-column {
-            flex-direction: column;
-        }
-        
-        .justify-between {
-            justify-content: space-between;
-        }
-        
-        .align-center {
-            align-items: center;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            padding: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-        
-        .highlight {
-            background-color: rgba(76, 175, 80, 0.1);
-            padding: 20px;
-            border-left: 4px solid var(--primary);
-            margin: 20px 0;
-        }
-        
-        /* Header Styles */
-        header {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        nav {
-            padding: 20px 0;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            color: var(--dark);
-            font-weight: 500;
-        }
-        
-        nav ul li a:hover {
-            color: var(--primary);
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
-        
-        /* Hero Section */
-        #hero {
-            background: linear-gradient(135deg, rgba(76, 175, 80, 0.9), rgba(33, 150, 243, 0.9));
-            color: white;
-            padding: 150px 0 100px;
-            text-align: center;
-        }
-        
-        #hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: white;
-        }
-        
-        #hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
-        
-        .tagline {
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin-bottom: 40px;
-        }
-        
-        /* Appendix Link Styles */
-        .link-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-        }
-        
-        .appendix-link {
-            display: flex;
-            align-items: center;
-            padding: 12px 15px;
-            background: white;
-            border-radius: 6px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-        }
-        
-        .appendix-link:hover {
-            background: #f5f5f5;
-            transform: translateX(5px);
-        }
-        
-        .appendix-link img {
-            width: 24px;
-            height: 24px;
-            margin-right: 12px;
-        }
-        
-        /* Team Styles */
-        .team-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border: 3px solid var(--primary);
-        }
-        
-        .role {
-            color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-        
-        .professor-card {
-            border-top: 5px solid var(--secondary);
-            grid-column: 2/3;
-        }
-        
-        .student-card {
-            border-top: 5px solid var(--primary);
-            grid-row: 2;
-        }
-        
-        /* Research Links */
-        .research-link {
-            color: var(--secondary);
-            text-decoration: underline;
-            font-weight: 500;
-        }
-        
-        .research-link:hover {
-            color: var(--primary-dark);
-        }
-
-        footer ul {
-            display: flex;
-            justify-content: space-between;
-            list-style: none;
-            color:#000;
-        }
-        
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            section {
-                padding: 40px 0;
-            }
-        }
-    </style>
+    <title>Smart Energy Management System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <nav class="flex justify-between align-center">
-                <div class="logo">EcoSync</div>
+                <div class="logo">Smart Energy Management System</div>
                 <ul class="flex">
                     <li><a href="#about">About</a></li>
                     <li><a href="#problem">Problem</a></li>
@@ -319,13 +28,47 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="container">
-            <h1>EcoSync - Smart Energy Management System</h1>
+            <h1>Smart Energy Management System</h1>
             <p class="tagline">Smarter Homes, Greener Future</p>
             <p>A comprehensive solution to track user activities and schedules, optimizing energy usage by preventing unnecessary operation of heating, cooling, and lighting systems.</p>
             <a href="#prototype" class="btn">View Prototype</a>
             <a href="#research" class="btn btn-secondary">Research Details</a>
         </div>
     </section>
+
+
+        <!-- Team Section -->
+        <section id="team">
+            <div class="container">
+                <h2 class="text-center">Our Team</h2>
+                <div class="grid">
+                    <div class="team-member card professor-card">
+                        <img src="images/DRJoshwa.jpeg" alt="Dr. Joshua C. Nwokeji" class="team-img">
+                        <h3>Dr. Joshua C. Nwokeji</h3>
+                        <p class="role">Course Instructor</p>
+                        <p>GCIS 514 Professor</p>
+                    </div>
+                    <div class="team-member card student-card">
+                        <img src="images/meyirr.jpeg" alt="Meiyeer Yeerbo" class="team-img">
+                        <h3>Meiyeer Yeerbo</h3>
+                        <p class="role">Team member</p>
+                        <p>3205854</p>
+                    </div>
+                    <div class="team-member card student-card">
+                        <img src="images/v.JPG"Vishnu Gade" class="team-img">
+                        <h3>Vishnu Gade</h3>
+                        <p class="role">Team member</p>
+                        <p>3215110</p>
+                    </div>
+                    <div class="team-member card student-card">
+                        <img src="images/meshari.jpeg"Meshari Alshehri" class="team-img">
+                        <h3>Meshari Alshehri</h3>
+                        <p class="role">Team member</p>
+                        <p>3177525</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- About Section -->
     <section id="about">
@@ -353,7 +96,7 @@
                         <li>Mobile application for electricity usage management</li>
                         <li>Integration with smart home devices</li>
                         <li>AI-powered recommendations and automation</li>
-                        <li>10-week development timeframe</li>
+                        <li>12-week development timeframe</li>
                         <li>Initial focus on residential users</li>
                     </ul>
                 </div>
@@ -412,7 +155,7 @@
                         <h4>Surveys</h4>
                         <img src="images/survey.png" alt="Survey Screenshot" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
                         <p>Quantitative and qualitative data collection about energy management challenges and desired features.</p>
-                        <p><a href="https://docs.google.com/forms/d/1XoGlcBkMbesRGylqJoX6ohpJhEEa4vvLXxFnZGnVt3k/edit?pli=1#responses" class="research-link">View survey results</a></p>
+                        <p><a href="https://docs.google.com/spreadsheets/d/1HPGLJWaNhqYMEn2lvdT-BZGqbVRVNwyXeJBph0Ik01U/edit?usp=sharing" class="research-link">View survey results</a></p>
                     </div>
     
                     <div class="card">
@@ -441,91 +184,102 @@
         </div>
     </section>
     
-            
-            <div class="methodology">
-                <h3>Research Timeline</h3>
-                <div class="grid">
-                    <div class="card">
-                        <h4>Phase 1: Requirements Gathering</h4>
-                        <p>Survey and initial interview design with 3-4 diverse participants to identify user needs.</p>
-                        <p><a href="https://knightsgannon-my.sharepoint.com/:w:/r/personal/gade007_gannon_edu/Documents/Project%20Management/INTERVIEW%20DOCS/STAKEHOLDER%20RECRUMENT%20MAIL.docx?d=w5d39faa798a44887b67ea7438bccbd4e&csf=1&web=1&e=1tS8yg" class="research-link" target="_blank">View recruitment materials</a></p>
-                    </div>
-                    <div class="card">
-                        <h4>Phase 2: Design Iteration 1</h4>
-                        <p>Low-fidelity wireframes and concept sketches focusing on core functionality.</p>
-                        <p><a href="https://miro.com/app/board/uXjVLpM2JX0=/?share_link_id=576191396522" class="research-link" target="_blank">View initial wireframes</a></p>
-                    </div>
-                    <div class="card">
-                        <h4>Phase 3: Usability Testing</h4>
-                        <p>Interactive testing of prototypes with collection of user feedback.</p>
-                        <p><a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Project%20Management/alsherhri%20teams%20interview.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZSOgKm" class="research-link" target="_blank">View testing sessions</a></p>
-                    </div>
-                    <div class="card">
-                        <h4>Phase 4: Final Iteration</h4>
-                        <p>Comprehensive prototype incorporating all improvements and final usability tests.</p>
-                        <p><a href="https://www.figma.com/design/0PlZogpDrsIcumVSTJYOB2/User-Persona--Templates?node-id=0-1&t=qa2Xw5eUsLjFjv3Y-1" class="research-link" target="_blank">View final prototype</a></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="highlight">
-                <h3>Participant Demographics</h3>
-                <p>We recruited and interviewed six participants representing diverse living situations and electricity usage patterns:</p>
-                
-                <!-- Miro Boards and Personas Showcase Section -->
-                <div class="miro-showcase">
-                    <h3>User Personas from Research</h3>
-                    <div class="miro-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-                        <div class="miro-item">
-                            <img src="images/persona/mihikdi.png" alt="Mhindi Persona" style="width: 100%;">
-                            <div class="miro-caption">
-                                <h4>Mhindi - 25, High Tech</h4>
-                                <p>Homeowner focused on energy optimization and automation</p>
+            <!-- <div class="container">
+
+            </div> -->
+            <section id="findings">
+                <div class="container">
+                    <div class="research_timeline">
+                        <h3>Design Timeline</h3>
+                        <div class="grid">
+                            <div class="card">
+                                <h4>Phase 1: Requirements Gathering</h4>
+                                <p>Survey and initial interview design with 3-4 diverse participants to identify user needs.</p>
+                                <p><a href="https://knightsgannon-my.sharepoint.com/:w:/r/personal/gade007_gannon_edu/Documents/Project%20Management/INTERVIEW%20DOCS/STAKEHOLDER%20RECRUMENT%20MAIL.docx?d=w5d39faa798a44887b67ea7438bccbd4e&csf=1&web=1&e=1tS8yg" class="research-link" target="_blank">View recruitment materials</a></p>
                             </div>
-                        </div>
-                        <div class="miro-item">
-                            <img src="images/persona/robert.png" alt="Robert Persona" style="width: 100%;">
-                            <div class="miro-caption">
-                                <h4>Robert - 47, Medium Tech</h4>
-                                <p>Apartment renter in shared household with cost concerns</p>
+                            <div class="card">
+                                <h4>Phase 2: Design Iteration 1</h4>
+                                <p>Low-fidelity wireframes and concept sketches focusing on core functionality.</p>
+                                <p><a href="https://miro.com/app/board/uXjVLpM2JX0=/?share_link_id=576191396522" class="research-link" target="_blank">View initial wireframes</a></p>
                             </div>
-                        </div>
-                        <div class="miro-item">
-                            <img src="images/persona/mosuad.png" alt="Mouaed Persona" style="width: 100%;">
-                            <div class="miro-caption">
-                                <h4>Mouaed - 30, Medium Tech</h4>
-                                <p>Homeowner with family of 4 and energy consumption priorities</p>
+                            <div class="card">
+                                <h4>Phase 3: Usability Testing</h4>
+                                <p>Interactive testing of prototypes with collection of user feedback.</p>
+                                <p><a href="https://knightsgannon-my.sharepoint.com/:v:/r/personal/gade007_gannon_edu/Documents/Project%20Management/alsherhri%20teams%20interview.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZSOgKm" class="research-link" target="_blank">View testing sessions</a></p>
                             </div>
-                        </div>
-                        <div class="miro-item">
-                            <img src="images/persona/kumar.png" alt="Kumar Persona" style="width: 100%;">
-                            <div class="miro-caption">
-                                <h4>Kumar - 24, Medium Tech</h4>
-                                <p>Apartment renter living alone with simple interface needs</p>
-                            </div>
-                        </div>
-                        <div class="miro-item">
-                            <img src="images/persona/oliver.png" alt="Oliver Persona" style="width: 100%;">
-                            <div class="miro-caption">
-                                <h4>Oliver - 27, High Tech</h4>
-                                <p>Apartment renter in shared space with 3 people</p>
-                            </div>
-                        </div>
-                        <div class="miro-item">
-                            <img src="images/persona/colton.png" alt="Colton Persona" style="width: 100%;">
-                            <div class="miro-caption">
-                                <h4>Colton - 32, Low Tech</h4>
-                                <p>Apartment renter in shared space with accessibility focus</p>
+                            <div class="card">
+                                <h4>Phase 4: Final Iteration</h4>
+                                <p>Comprehensive prototype incorporating all improvements and final usability tests.</p>
+                                <p><a href="https://www.figma.com/design/0PlZogpDrsIcumVSTJYOB2/User-Persona--Templates?node-id=0-1&t=qa2Xw5eUsLjFjv3Y-1" class="research-link" target="_blank">View final prototype</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </section>
+
+            <section id="findings">
+                <div class="container">
+                    <div class="highlight">
+                        <h3>Participant Demographics</h3>
+                        <p>We recruited and interviewed six participants representing diverse living situations and electricity usage patterns:</p>
+                        
+                        <!-- Miro Boards and Personas Showcase Section -->
+                        <div class="miro-showcase">
+                            <h3>User Personas from Research</h3>
+                            <div class="miro-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                                <div class="miro-item">
+                                    <img src="images/persona/mihikdi.png" alt="Mhindi Persona" style="width: 100%;">
+                                    <div class="miro-caption">
+                                        <h4>Mhindi - 25, High Tech</h4>
+                                        <p>Homeowner focused on energy optimization and automation</p>
+                                    </div>
+                                </div>
+                                <div class="miro-item">
+                                    <img src="images/persona/robert.png" alt="Robert Persona" style="width: 100%;">
+                                    <div class="miro-caption">
+                                        <h4>Robert - 47, Medium Tech</h4>
+                                        <p>Apartment renter in shared household with cost concerns</p>
+                                    </div>
+                                </div>
+                                <div class="miro-item">
+                                    <img src="images/persona/mosuad.png" alt="Mouaed Persona" style="width: 100%;">
+                                    <div class="miro-caption">
+                                        <h4>Mouaed - 30, Medium Tech</h4>
+                                        <p>Homeowner with family of 4 and energy consumption priorities</p>
+                                    </div>
+                                </div>
+                                <div class="miro-item">
+                                    <img src="images/persona/kumar.png" alt="Kumar Persona" style="width: 100%;">
+                                    <div class="miro-caption">
+                                        <h4>Kumar - 24, Medium Tech</h4>
+                                        <p>Apartment renter living alone with simple interface needs</p>
+                                    </div>
+                                </div>
+                                <div class="miro-item">
+                                    <img src="images/persona/oliver.png" alt="Oliver Persona" style="width: 100%;">
+                                    <div class="miro-caption">
+                                        <h4>Oliver - 27, High Tech</h4>
+                                        <p>Apartment renter in shared space with 6 people</p>
+                                    </div>
+                                </div>
+                                <div class="miro-item">
+                                    <img src="images/persona/colton.png" alt="Colton Persona" style="width: 100%;">
+                                    <div class="miro-caption">
+                                        <h4>Colton - 32, Low Tech</h4>
+                                        <p>Apartment renter in shared space with accessibility focus</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.figma.com/design/0PlZogpDrsIcumVSTJYOB2/User-Persona--Templates?node-id=0-1&t=qa2Xw5eUsLjFjv3Y-1" class="btn" target="_blank">View Detailed Personas</a>
+                </div>
+
+            </section>
                 
-                <a href="https://www.figma.com/design/0PlZogpDrsIcumVSTJYOB2/User-Persona--Templates?node-id=0-1&t=qa2Xw5eUsLjFjv3Y-1" class="btn" target="_blank">View Detailed Personas</a>
-            </div>
-    </section>
+               
+            <!-- </div> -->
+    <!-- </section> -->
 
     <!-- Findings Section -->
     <section id="findings">
@@ -580,32 +334,36 @@
         </div>
     </section>
 <!-- Miro Board Visualizations -->
-<div class="miro-showcase">
-    <h3>Key Finding Visualizations</h3>
-    <div class="miro-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-        <div class="miro-item">
-            <img src="images/3.png" alt="User Journey Map" style="width: 100%;">
-            <div class="miro-caption">
-                <h4>User Journey Map</h4>
-                <p>Visualization of user experience touchpoints</p>
-            </div>
-        </div>
-        <div class="miro-item">
-            <img src="images/2.png" alt="Pain Points Analysis" style="width: 100%;">
-            <div class="miro-caption">
-                <h4>Pain Points Analysis</h4>
-                <p>Common challenges identified through research</p>
-            </div>
-        </div>
-        <div class="miro-item">
-            <img src="images/1.png" alt="Feature Priority Matrix" style="width: 100%;">
-            <div class="miro-caption">
-                <h4>Feature Priority Matrix</h4>
-                <p>Prioritization of features based on user needs</p>
+<section >
+    <div class="container">
+        <div class="miro-showcase">
+           <h3> Key Finding Visualizations</h3>
+            <div class="miro-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                <div class="miro-item">
+                    <img src="images/3.png" alt="User Journey Map" style="width: 100%;">
+                    <div class="miro-caption">
+                        <h4>User Journey Map</h4>
+                        <p>Visualization of user experience touchpoints</p>
+                    </div>
+                </div>
+                <div class="miro-item">
+                    <img src="images/2.png" alt="Pain Points Analysis" style="width: 100%;">
+                    <div class="miro-caption">
+                        <h4>Pain Points Analysis</h4>
+                        <p>Common challenges identified through research</p>
+                    </div>
+                </div>
+                <div class="miro-item">
+                    <img src="images/1.png" alt="Feature Priority Matrix" style="width: 100%;">
+                    <div class="miro-caption">
+                        <h4>Feature Priority Matrix</h4>
+                        <p>Prioritization of features based on user needs</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
     <!-- Requirements Section -->
     <section id="requirements" style="background: white;">
@@ -774,38 +532,7 @@
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team">
-        <div class="container">
-            <h2 class="text-center">Our Team</h2>
-            <div class="grid">
-                <div class="team-member card professor-card">
-                    <img src="images/DRJoshwa.jpeg" alt="Dr. Joshua C. Nwokeji" class="team-img">
-                    <h3>Dr. Joshua C. Nwokeji</h3>
-                    <p class="role">Course Instructor</p>
-                    <p>GCIS 514 Professor</p>
-                </div>
-                <div class="team-member card student-card">
-                    <img src="images/meyirr.jpeg" alt="Meiyeer Yeerbo" class="team-img">
-                    <h3>Meiyeer Yeerbo</h3>
-                    <p class="role">Team member</p>
-                    <p>3205854</p>
-                </div>
-                <div class="team-member card student-card">
-                    <img src="images/v.JPG"Vishnu Gade" class="team-img">
-                    <h3>Vishnu Gade</h3>
-                    <p class="role">Team member</p>
-                    <p>3215110</p>
-                </div>
-                <div class="team-member card student-card">
-                    <img src="images/meshari.jpeg"Meshari Alshehri" class="team-img">
-                    <h3>Meshari Alshehri</h3>
-                    <p class="role">Team member</p>
-                    <p>3177525</p>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Appendix Section -->
     <section id="appendix" style="background-color: var(--light);">
@@ -973,7 +700,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <h3>EcoSync - Smart Energy Management System</h3>
+            <h3>Smart Energy Management System</h3>
             <p>Smarter Homes, Greener Future</p>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -985,7 +712,7 @@
                 <li><a href="#appendix">Appendices</a></li>
             </ul>
             <p>GCIS 514 – Requirements and Project Management</p>
-            <p>© 2025 EcoSync Team. All rights reserved.</p>
+            <!-- <p>© 2025 Team. All rights reserved.</p> -->
         </div>
     </footer>
 </body>

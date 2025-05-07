@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Feature Comparison Matrix for Smart Energy Systems</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .matrix-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2d3748;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .comparison-table th {
+            background-color: #1a365d;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            padding: 14px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .comparison-table th:first-child {
+            background-color: #2a4365;
+            text-align: left;
+        }
+        .comparison-table td {
+            padding: 14px 10px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+        .comparison-table td:first-child {
+            text-align: left;
+            font-weight: 500;
+            background-color: #edf2f7;
+            color: #2d3748;
+        }
+        .check-mark {
+            color: #2f855a;
+            font-size: 18px;
+        }
+        .cross-mark {
+            color: #e53e3e;
+            font-size: 18px;
+        }
+        .feature-row:nth-child(odd) {
+            background-color: #f7fafc;
+        }
+        .feature-row:nth-child(even) {
+            background-color: #ffffff;
+        }
+        .feature-row:hover {
+            background-color: #ebf4ff;
+        }
+        .footer-note {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #718096;
+        }
+        /* @media print {
+            body {
+                padding: 0;
+                background-color: white;
+            }
+            .matrix-container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+            }
+            .comparison-table th {
+                background-color: #e2e8f0 !important;
+                color: #1a202c !important;
+            }
+            .comparison-table th:first-child {
+                background-color: #edf2f7 !important;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="matrix-container">
+        <!-- <h1 class="title">Feature Comparison Matrix</h1> -->
+        
+        <table id="comparison_table" class="comparison-table">
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Feature</th>
+                    <th>Google<br>Nest</th>
+                    <th>Amazon<br>Smart<br>Plugs</th>
+                    <th>Ecobee</th>
+                    <th>Emporia<br>Energy</th>
+                    <th>Sense</th>
+                    <th>Eve<br>Systems</th>
+                    <th>Aliste<br>Technologies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="feature-row">
+                    <td>Energy Monitoring</td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                </tr>
+                <tr class="feature-row">
+                    <td>Device-Level Monitoring</td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                </tr>
+                <tr class="feature-row">
+                    <td>Learning Capabilities</td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                </tr>
+                <tr class="feature-row">
+                    <td>Remote Sensors</td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                </tr>
+                <tr class="feature-row">
+                    <td>Data Reporting</td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                </tr>
+                <tr class="feature-row">
+                    <td>Smart Home Integration</td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                </tr>
+                <tr class="feature-row">
+                    <td>Privacy Focus</td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                </tr>
+                <tr class="feature-row">
+                    <td>Voice Control</td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                </tr>
+                <tr class="feature-row">
+                    <td>AI Usage Cost Prediction</td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                    <td><i class="fas fa-check check-mark"></i></td>
+                </tr>
+                <tr class="feature-row">
+                    <td>Weather-Adaptive Energy Optimization</td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                    <td><i class="fas fa-times cross-mark"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <p class="footer-note">
+        Compare key features across major smart energy monitoring systems to make an informed decision.
+    </p> -->
+    
+</body>
+</html>
