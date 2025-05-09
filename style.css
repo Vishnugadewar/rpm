@@ -811,6 +811,13 @@ footer ul a{
     bottom: 0.25rem;
 }
 
+.versions img{
+    height: 690px;
+}
+.versions .v1{
+    height: auto;
+}
+
 @media (min-width: 40rem) {
     .timeline ul {
         grid-template-columns: 1fr var(--line-w) 1fr;
