@@ -290,6 +290,8 @@ footer ul a{
     justify-content: space-between;
  /* height: 360px; */
 }
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
@@ -774,10 +776,16 @@ footer ul a{
     margin: 0;
     padding-left: 1.2rem;
     font-size: 0.85rem;
+    list-style: disc !important;
+    list-style-type: disc !important;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
 .timeline .outcome-list li {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0 !important;
+    display: list-item !important;
 }
 
 /* shadows */
